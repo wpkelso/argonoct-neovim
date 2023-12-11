@@ -34,15 +34,15 @@ M.groups = function()
 
 		["Comment"] = { fg = c['tx-3'], bg = 'NONE', italic = true, },
 
-		["Constant"]  = { fg = c['ye'], bg = 'NONE' },
-		["String"]    = { fg = c['cy'], bg = 'NONE' },
-		["Character"] = { fg = c['cy'], bg = 'NONE' },
-		["Number"]    = { fg = c['pu'], bg = 'NONE' },
-		["Boolean"]   = { fg = c['ye'], bg = 'NONE' },
-		["Float"]     = { fg = c['pu'], bg = 'NONE' },
+		["Constant"]  = { fg = c['ylw'], bg = 'NONE' },
+		["String"]    = { fg = c['cyn'], bg = 'NONE' },
+		["Character"] = { fg = c['cyn'], bg = 'NONE' },
+		["Number"]    = { fg = c['pur'], bg = 'NONE' },
+		["Boolean"]   = { fg = c['ylw'], bg = 'NONE' },
+		["Float"]     = { fg = c['pur'], bg = 'NONE' },
 
-		["Identifier"] = { fg = c['bl'], bg = 'NONE' },
-		["Function"]   = { fg = c['or'], bg = 'NONE' },
+		["Identifier"] = { fg = c['blu'], bg = 'NONE' },
+		["Function"]   = { fg = c['ylw'], bg = 'NONE' },
 
 		["Statement"]   = { fg   = 'NONE',    bg = 'NONE'   },
 		["Conditional"] = { link = 'Keyword'                },
