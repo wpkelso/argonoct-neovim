@@ -19,7 +19,7 @@ M.groups = function()
         ["SpellRare"]  = { fg = c['red-2'], bg = 'NONE', underline = true, },
 
         ["NonText"]     = { fg = c['fg'], bg = 'NONE' },
-        ["EndOfBuffer"] = { fg = 'NONE', bg    = 'NONE' },
+        ["EndOfBuffer"] = { fg = 'NONE', bg = 'NONE' },
 
         ["Search"]     = { fg = c['tx'], bg = c['cy-2'] },
         ["IncSearch"]  = { fg = c['tx'], bg = c['cy-2'] },
@@ -81,14 +81,14 @@ M.groups = function()
         ["MsgSeparator"]   = { fg = 'NONE',          bg = c['bg'] },
 
         -- Pop-up menu
-        ["Pmenu"]      = { fg = c['fg'], bg = c['bg']},
-        ["PmenuSel"]   = { fg = c['bg'],   bg = c['cy-2'] },
-        ["PmenuSbar"]  = { fg = 'NONE',    bg = c['bg']   },
-        ["PmenuThumb"] = { fg = 'NONE',    bg = c['bg'] },
+        ["Pmenu"]      = { fg = c['fg'], bg = c['cy-2'] },
+        ["PmenuSel"]   = { fg = c['bg'], bg = c['cy-2'] },
+        ["PmenuSbar"]  = { fg = 'NONE', bg = c['bg'] },
+        ["PmenuThumb"] = { fg = 'NONE', bg = c['bg'] },
 
         ["TabLine"]     = { fg = c['bg'], bg = c['fg']   },
-        ["TabLineSel"]  = { fg = c['bg'], bg = c['fg'] },
-        ["TabLineFill"] = { fg = c['bg'], bg = c['fg']   },
+        ["TabLineSel"]  = { fg = c['fg'], bg = c['bg'] },
+        ["TabLineFill"] = { fg = c['fg'], bg = c['bg']   },
 
         ["StatusLine"]       = { fg = c['fg'], bg = c['bg'] },
         ["StatusLineNC"]     = { fg = c['fg'], bg = c['bg']   },
@@ -96,7 +96,7 @@ M.groups = function()
         ["StatusLineTermNC"] = { fg = c['fg'], bg = c['bg'] },
 
         ["WinBar"]   = { fg = c['fg'], bg = c['bg'] },
-        ["WinBarNC"] = { fg = c['fg'], bg = c['bg']   },
+        ["WinBarNC"] = { fg = c['fg'], bg = c['bg'] },
 
         ["WildMenu"]       = { fg = 'NONE', bg = c['cy-2'] },
         ["Folded"]         = { fg = c['gry'], bg = c['bg'] },
