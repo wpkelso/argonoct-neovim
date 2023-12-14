@@ -47,7 +47,7 @@ M.groups = function()
 
         --#region Actual text highlighting
 
-        ["Comment"] = { fg = c['blu'], bg = 'NONE', italic = true, },
+        ["Comment"] = { fg = c['cyn'], bg = 'NONE', italic = true, },
 
         ["Constant"]  = { fg = c['grn'], bg = 'NONE' },
         ["String"]    = { fg = c['lbl'], bg = 'NONE' },

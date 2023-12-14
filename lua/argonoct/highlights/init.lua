@@ -13,7 +13,7 @@ M.groups = function ()
 		-- require('argonoct.highlights.dashboard').groups(),
 		-- require('argonoct.highlights.git').groups(),
 		-- require('argonoct.highlights.indent-blank-line').groups(),
-		-- require('argonoct.highlights.lsp').groups(),
+		require('argonoct.highlights.lsp').groups(),
 		-- require('argonoct.highlights.markdown').groups(),
 		-- require('argonoct.highlights.nvimtree').groups(),
 		-- require('argonoct.highlights.telescope').groups(),

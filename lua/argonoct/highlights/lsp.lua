@@ -1,4 +1,4 @@
-local palette = require('flexoki.palette')
+local palette = require('argonoct.palette')
 
 local M = {}
 
@@ -7,9 +7,9 @@ M.groups = function()
 
 	--- @type table<string, vim.api.keyset.highlight>
 	return {
-		["LspDiagnosticsDefaultError"]           = { fg = c.error_red,      bg = 'NONE' },
-		["LspDiagnosticsDefaultWarning"]         = { fg = c.warning_orange, bg = 'NONE' },
-		["LspDiagnosticsDefaultInformation"]     = { fg = c.info_yellow,    bg = 'NONE' },
+		["LspDiagnosticsDefaultError"]           = { fg = c['red'], bg = 'NONE' },
+		["LspDiagnosticsDefaultWarning"]         = { fg = c['org'], bg = 'NONE' },
+		["LspDiagnosticsDefaultInformation"]     = { fg = c['ylw'], bg = 'NONE' },
 		["LspDiagnosticsDefaultInfo"]            = { fg = c.info_yellow,    bg = 'NONE' },
 		["LspDiagnosticsDefaultHint"]            = { fg = c.hint_blue,      bg = 'NONE' },
 		["LspDiagnosticsVirtualTextError"]       = { fg = c.error_red,      bg = 'NONE' },
