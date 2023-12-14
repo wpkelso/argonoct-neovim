@@ -7,11 +7,11 @@ M.groups = function()
 
 	--- @type table<string, vim.api.keyset.highlight>
 	return {
-		["WhichKey"]          = { fg = c.blu, bg = 'NONE' },
+		["WhichKey"]          = { fg = c.fg, bg = 'NONE' },
 		["WhichKeySeparator"] = { fg = c.slv, bg = 'NONE' },
 		["WhichKeyGroup"]     = { fg = c.cyn, bg = 'NONE' },
 		["WhichKeyDesc"]      = { fg = c.blu, bg = 'NONE' },
-		["WhichKeyFloat"]     = { fg = 'NONE', bg = c.gry },
+		["WhichKeyFloat"]     = { fg = 'NONE', bg = c.bg },
 	}
 end
 
