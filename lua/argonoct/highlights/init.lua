@@ -17,7 +17,7 @@ M.groups = function ()
 		-- require('argonoct.highlights.markdown').groups(),
 		-- require('argonoct.highlights.nvimtree').groups(),
 		-- require('argonoct.highlights.telescope').groups(),
-		-- require('argonoct.highlights.treesitter').groups(),
+		require('argonoct.highlights.treesitter').groups(),
 		require('argonoct.highlights.whichkey').groups(),
 	}
 
