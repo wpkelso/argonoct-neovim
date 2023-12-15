@@ -128,8 +128,8 @@ M.groups = function()
         -- The MatchWord groups don't actually exist, but we define them here
         -- to link to them in plugin specific files instead of redefining the
         -- same group multiple times
-        ["MatchWord"]      = { fg = 'NONE', bg = c['gry'] },
-        ["MatchParen"]     = { fg = 'NONE', bg = c['gry'] },
+        ["MatchWord"]      = { fg = 'NONE', bg = c['slv'] },
+        ["MatchParen"]     = { fg = 'NONE', bg = c['slv'] },
         ["MatchWordCur"]   = { fg = 'NONE', bg = 'NONE' },
         ["MatchParenCur"]  = { fg = 'NONE', bg = 'NONE' },
 
@@ -143,8 +143,8 @@ M.groups = function()
         ["Question"]   = { fg = c['ylw'], bg = 'NONE' },
 
         -- Cursor and selection related
-        ["Cursor"]       = { fg = c['bg'], bg = 'NONE' },
-        ["lCursor"]      = { fg = c['bg'], bg = c['bg'] },
+        ["Cursor"]       = { fg = c['fg'], bg = 'NONE' },
+        ["lCursor"]      = { fg = c['fg'], bg = c['bg'] },
         ["CursorLine"]   = { fg = 'NONE',  bg = c['bg'] },
         ["CursorLineNr"] = { fg = c['fg'], bg = 'NONE', bold = true, },
         ["CursorColumn"] = { fg = 'NONE',  bg = c['bg'] },
