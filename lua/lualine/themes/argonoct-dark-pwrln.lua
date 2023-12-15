@@ -19,8 +19,8 @@ return {
         c = { fg = c['bg'], bg = c['ylw'] }
     },
     replace = {
-        a = { fg = c['bg'], bg = c['blu'], gui = 'bold' },
-        b = { fg = c['fg'], bg = c['slv'] },
+        a = { fg = c['bg'], bg = c['mag'], gui = 'bold' },
+        b = { fg = c['fg'], bg = c['gry'] },
         c = { fg = c['fg'], bg = c['gry'] }
     },
     command = {

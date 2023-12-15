@@ -1,4 +1,4 @@
-local palette = require('flexoki.palette')
+local palette = require('argonoct.palette')
 
 local M = {}
 
@@ -7,12 +7,12 @@ M.groups = function()
 
 	--- @type table<string, vim.api.keyset.highlight>
 	return {
-		["SignAdd"]        = { fg = c.sign_add,    bg = 'NONE' },
-		["SignChange"]     = { fg = c.sign_change, bg = 'NONE' },
-		["SignDelete"]     = { fg = c.sign_delete, bg = 'NONE' },
-		["GitSignsAdd"]    = { fg = c.sign_add,    bg = 'NONE' },
-		["GitSignsChange"] = { fg = c.sign_change, bg = 'NONE' },
-		["GitSignsDelete"] = { fg = c.sign_delete, bg = 'NONE' },
+		["SignAdd"]        = { fg = c['bg'], bg = c['ygn'] },
+		["SignChange"]     = { fg = c['bg'], bg = c['blu'] },
+		["SignDelete"]     = { fg = c['bg'], bg = c['red'] },
+		["GitSignsAdd"]    = { fg = c['bg'], bg = c['ygn'] },
+		["GitSignsChange"] = { fg = c['bg'], bg = c['blu'] },
+		["GitSignsDelete"] = { fg = c['bg'], bg = c['red'] },
 	}
 end
 

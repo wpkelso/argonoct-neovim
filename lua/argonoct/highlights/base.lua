@@ -33,17 +33,17 @@ M.groups = function()
         ["SpellLocal"] = { fg = c['red'], bg = 'NONE', underline = true },
         ["SpellRare"]  = { fg = c['red'], bg = 'NONE', underline = true },
 
-        ["NonText"]     = { fg = c['fg'], bg = c['bg'] },
-        ["EndOfBuffer"] = { fg = 'NONE', bg = 'NONE'   },
+        ["NonText"]     = { fg = c['fg'], bg = 'NONE' },
+        ["EndOfBuffer"] = { fg = 'NONE',  bg = 'NONE' },
 
         ["Search"]     = { fg = c['bg'], bg = c['cyn'] },
         ["IncSearch"]  = { fg = c['bg'], bg = c['cyn'] },
         ["Substitute"] = { fg = 'NONE',  bg = c['cyn'] },
 
-        ["DiffAdd"]    = { fg = c['bg'], bg = c['grn'] },
-        ["DiffChange"] = { fg = c['bg'], bg = c['blu'] },
-        ["DiffDelete"] = { fg = c['bg'], bg = c['red'] },
-        ["DiffText"]   = { fg = c['bg'], bg = c['blk'] },
+        ["DiffAdd"]    = { fg = c['wht'], bg = c['grn'] },
+        ["DiffChange"] = { fg = c['wht'], bg = c['blu'] },
+        ["DiffDelete"] = { fg = c['wht'], bg = c['red'] },
+        ["DiffText"]   = { fg = c['wht'], bg = 'NONE' },
 
         --#region Actual text highlighting
 
@@ -53,8 +53,8 @@ M.groups = function()
         ["String"]    = { fg = c['lbl'], bg = 'NONE' },
         ["Character"] = { fg = c['lbl'], bg = 'NONE' },
         ["Number"]    = { fg = c['red'], bg = 'NONE' },
-        ["Boolean"]   = { fg = c['red'], bg = 'NONE' },
-        ["Float"]     = { fg = c['red'], bg = 'NONE' },
+        ["Boolean"]   = { link = 'Number' },
+        ["Float"]     = { link = 'Number' },
 
         ["Identifier"] = { fg = c['blu'], bg = 'NONE' },
         ["Function"]   = { fg = c['ylw'], bg = 'NONE' },
@@ -67,11 +67,11 @@ M.groups = function()
         ["Keyword"]     = { fg   = c['wht'], bg = 'NONE' },
         ["Exception"]   = { link = 'Keyword' },
 
-        ["PreProc"]   = { fg = c['pur'], bg = 'NONE' },
-        ["Include"]   = { fg = c['pur'], bg = 'NONE' },
-        ["Define"]    = { fg = c['pur'], bg = 'NONE' },
-        ["Macro"]     = { fg = c['pur'], bg = 'NONE' },
-        ["PreCondit"] = { fg = c['pur'], bg = 'NONE' },
+        ["PreProc"]   = { fg = c['wht'], bg = 'NONE' },
+        ["Include"]   = { fg = c['wht'], bg = 'NONE' },
+        ["Define"]    = { fg = c['wht'], bg = 'NONE' },
+        ["Macro"]     = { fg = c['wht'], bg = 'NONE' },
+        ["PreCondit"] = { fg = c['wht'], bg = 'NONE' },
 
         ["Type"]         = { fg = c['ygn'], bg = 'NONE' },
         ["StorageClass"] = { fg = c['ygn'], bg = 'NONE' },
@@ -81,7 +81,7 @@ M.groups = function()
         ["SpecialComment"] = { fg   = c['mag'], bg = 'NONE' },
         ["Special"]        = { fg   = c['mag'], bg = 'NONE' },
         ["SpecialChar"]    = { fg   = c['mag'], bg = 'NONE' },
-        ["Tag"]            = { fg   = c['pur'], bg = 'NONE' },
+        ["Tag"]            = { fg   = c['org'], bg = 'NONE' },
         ["Debug"]          = { fg   = c['pur'], bg = 'NONE' },
         ["Delimiter"]      = { link = 'Special' },
         ["Error"]          = { fg   = c['bg'], bg = c['red'], bold = true, },
@@ -101,7 +101,7 @@ M.groups = function()
         ["PmenuSbar"]  = { fg = 'NONE', bg = c['bg'] },
         ["PmenuThumb"] = { fg = 'NONE', bg = c['bg'] },
 
-        ["TabLine"]     = { fg = c['bg'], bg = c['fg'] },
+        ["TabLine"]     = { fg = c['fg'], bg = c['fg'] },
         ["TabLineSel"]  = { fg = c['fg'], bg = c['bg'] },
         ["TabLineFill"] = { fg = c['fg'], bg = c['bg'] },
 
@@ -113,16 +113,16 @@ M.groups = function()
         ["WinBar"]   = { fg = c['fg'], bg = c['bg'] },
         ["WinBarNC"] = { fg = c['fg'], bg = c['bg'] },
 
-        ["WildMenu"]       = { fg = 'NONE', bg = c['cy-2'] },
+        ["WildMenu"]       = { fg = 'NONE', bg = c['cyn'] },
         ["Folded"]         = { fg = c['gry'], bg = c['bg'] },
         ["FoldColumn"]     = { fg = c['gry'], bg = c['bg'] },
         ["LineNr"]         = { fg = c['slv'], bg = 'NONE' },
-        ["FloatBorder"]    = { fg = c['gry'], bg = c['blk'] },
+        ["FloatBorder"]    = { fg = c['gry'], bg = c['bg'] },
         ["Whitespace"]     = { fg = c['slv'], bg = 'NONE' },
         ["WinSeparator"]   = { fg = c['gry'], bg = c['blk'] },
         ["WinSeparatorNC"] = { fg = c['gry'], bg = c['blk'] },
-        ["NormalFloat"]    = { fg = c['gry'], bg = c['bg'] },
-        ["WarningMsg"]     = { fg = c['red'], bg = c['bg'] },
+        ["NormalFloat"]    = { fg = c['wht'], bg = c['bg'] },
+        ["WarningMsg"]     = { fg = c['ylw'], bg = c['bg'] },
         ["QuickFixLine"]   = { fg = 'NONE', bg = c['blu'] },
 
         -- The MatchWord groups don't actually exist, but we define them here
@@ -138,9 +138,9 @@ M.groups = function()
 
         ["SpecialKey"] = { fg = c['blu'], bg = 'NONE', bold = true, },
         ["Title"]      = { fg = c['blu'], bg = 'NONE', bold = true, },
-        ["ErrorMsg"]   = { fg = c['red-2'], bg = 'NONE', bold = true, },
-        ["MoreMsg"]    = { fg = c['ylw-2'], bg = 'NONE' },
-        ["Question"]   = { fg = c['ylw-2'], bg = 'NONE' },
+        ["ErrorMsg"]   = { fg = c['red'], bg = 'NONE', bold = true, },
+        ["MoreMsg"]    = { fg = c['ylw'], bg = 'NONE' },
+        ["Question"]   = { fg = c['ylw'], bg = 'NONE' },
 
         -- Cursor and selection related
         ["Cursor"]       = { fg = c['bg'], bg = 'NONE' },
