@@ -40,9 +40,9 @@ M.groups = function()
         ["IncSearch"]  = { fg = c['bg'], bg = c['cyn'] },
         ["Substitute"] = { fg = 'NONE',  bg = c['cyn'] },
 
-        ["DiffAdd"]    = { fg = c['wht'], bg = c['grn'] },
-        ["DiffChange"] = { fg = c['wht'], bg = c['blu'] },
-        ["DiffDelete"] = { fg = c['wht'], bg = c['red'] },
+        ["DiffAdd"]    = { fg = c['ygn'], bg = 'NONE' },
+        ["DiffChange"] = { fg = c['blu'], bg = 'NONE' },
+        ["DiffDelete"] = { fg = c['red'], bg = 'NONE' },
         ["DiffText"]   = { fg = c['wht'], bg = 'NONE' },
 
         --#region Actual text highlighting

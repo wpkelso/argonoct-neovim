@@ -7,6 +7,16 @@ M.groups = function()
 
 	--- @type table<string, vim.api.keyset.highlight>
 	return {
+		["DiagnosticError"]                      = { fg = c['red'], bg = 'NONE' }, -- inline msg
+		["DiagnosticWarn"]                       = { fg = c['ylw'], bg = 'NONE' }, -- inline msg
+		["DiagnosticInfo"]                       = { fg = c['slv'], bg = 'NONE' }, -- inline msg
+		["DiagnosticHint"]                       = { fg = c['gry'], bg = 'NONE' }, -- inline msg
+
+        ["DiagnosticSignError"]                  = { fg = c['red'], bg = 'NONE', bold = true }, -- gutter message
+		["DiagnosticSignWarn"]                   = { fg = c['ylw'], bg = 'NONE', bold = true }, -- gutter message
+		["DiagnosticSignInfo"]                   = { fg = c['slv'], bg = 'NONE', bold = true }, -- gutter message
+		["DiagnosticSignHint"]                   = { fg = c['gry'], bg = 'NONE', bold = true }, -- gutter message
+
 		["LspDiagnosticsDefaultError"]           = { fg = c['blu'], bg = 'NONE' },
 		["LspDiagnosticsDefaultWarning"]         = { fg = c['blu'], bg = 'NONE' },
 		["LspDiagnosticsDefaultInfo"]            = { fg = c['blu'], bg = 'NONE' },
@@ -22,16 +32,6 @@ M.groups = function()
 		["LspDiagnosticsFloatingInfo"]           = { fg = c['blu'], bg = 'NONE' },
 		["LspDiagnosticsFloatingHint"]           = { fg = c['blu'], bg = 'NONE' },
 
-		["DiagnosticError"]                      = { fg = c['red'], bg = 'NONE' }, -- inline msg
-		["DiagnosticWarn"]                       = { fg = c['ylw'], bg = 'NONE' }, -- inline msg
-		["DiagnosticInfo"]                       = { fg = c['slv'], bg = 'NONE' }, -- inline msg
-		["DiagnosticHint"]                       = { fg = c['gry'], bg = 'NONE' }, -- inline msg
-
-        ["DiagnosticSignError"]                  = { fg = c['red'], bg = 'NONE', bold = true }, -- gutter message
-		["DiagnosticSignWarn"]                   = { fg = c['ylw'], bg = 'NONE', bold = true }, -- gutter message
-		["DiagnosticSignInfo"]                   = { fg = c['slv'], bg = 'NONE', bold = true }, -- gutter message
-		["DiagnosticSignHint"]                   = { fg = c['gry'], bg = 'NONE', bold = true }, -- gutter message
-
 		["LspDiagnosticsSignError"]              = { fg = c['blu'], bg = 'NONE' },
 		["LspDiagnosticsSignWarning"]            = { fg = c['blu'], bg = 'NONE' },
 		["LspDiagnosticsSignInfo"]               = { fg = c['blu'], bg = 'NONE' },
@@ -43,7 +43,7 @@ M.groups = function()
 		["LspDiagnosticsHint"]                   = { fg = c['blu'], bg = 'NONE' },
 
 		["LspDiagnosticsUnderlineError"]         = { fg = 'NONE', bg = 'NONE', underline = true, },
-		["LspDiagnosticsUnderlineWarn"]       = { fg = 'NONE', bg = 'NONE', underline = true, },
+		["LspDiagnosticsUnderlineWarn"]          = { fg = 'NONE', bg = 'NONE', underline = true, },
 		["LspDiagnosticsUnderlineInfo"]          = { fg = 'NONE', bg = 'NONE', underline = true, },
 		["LspDiagnosticsUnderlineHint"]          = { fg = 'NONE', bg = 'NONE', underline = true, },
 
