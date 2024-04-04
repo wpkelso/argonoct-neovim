@@ -96,7 +96,7 @@ M.groups = function()
         ["MsgSeparator"]   = { fg = 'NONE', bg = c['bg'] },
 
         -- Pop-up menu
-        ["Pmenu"]      = { fg = c['fg'], bg = c['bg'] },
+        ["Pmenu"]      = { fg = c['fg'], bg = c['gry'] },
         ["PmenuSel"]   = { fg = c['bg'], bg = c['fg'] },
         ["PmenuSbar"]  = { fg = 'NONE', bg = c['bg'] },
         ["PmenuThumb"] = { fg = 'NONE', bg = c['bg'] },
@@ -119,8 +119,8 @@ M.groups = function()
         ["LineNr"]         = { fg = c['slv'], bg = 'NONE' },
         ["FloatBorder"]    = { fg = c['gry'], bg = c['bg'] },
         ["Whitespace"]     = { fg = c['slv'], bg = 'NONE' },
-        ["WinSeparator"]   = { fg = c['gry'], bg = c['blk'] },
-        ["WinSeparatorNC"] = { fg = c['gry'], bg = c['blk'] },
+        ["WinSeparator"]   = { fg = c['blk'], bg = c['blk'] },
+        ["WinSeparatorNC"] = { fg = c['blk'], bg = c['blk'] },
         ["NormalFloat"]    = { fg = c['wht'], bg = c['bg'] },
         ["WarningMsg"]     = { fg = c['ylw'], bg = c['bg'] },
         ["QuickFixLine"]   = { fg = 'NONE', bg = c['blu'] },
