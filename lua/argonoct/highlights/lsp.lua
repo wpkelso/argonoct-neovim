@@ -9,13 +9,13 @@ M.groups = function()
 	return {
 		["DiagnosticError"]                      = { fg = c['red'], bg = 'NONE' }, -- inline msg
 		["DiagnosticWarn"]                       = { fg = c['ylw'], bg = 'NONE' }, -- inline msg
-		["DiagnosticInfo"]                       = { fg = c['slv'], bg = 'NONE' }, -- inline msg
-		["DiagnosticHint"]                       = { fg = c['gry'], bg = 'NONE' }, -- inline msg
+		["DiagnosticInfo"]                       = { fg = c['wht'], bg = 'NONE' }, -- inline msg
+		["DiagnosticHint"]                       = { fg = c['slv'], bg = 'NONE' }, -- inline msg
 
         ["DiagnosticSignError"]                  = { fg = c['red'], bg = 'NONE', bold = true }, -- gutter message
 		["DiagnosticSignWarn"]                   = { fg = c['ylw'], bg = 'NONE', bold = true }, -- gutter message
-		["DiagnosticSignInfo"]                   = { fg = c['slv'], bg = 'NONE', bold = true }, -- gutter message
-		["DiagnosticSignHint"]                   = { fg = c['gry'], bg = 'NONE', bold = true }, -- gutter message
+		["DiagnosticSignInfo"]                   = { fg = c['wht'], bg = 'NONE', bold = true }, -- gutter message
+		["DiagnosticSignHint"]                   = { fg = c['slv'], bg = 'NONE', bold = true }, -- gutter message
 
 		["LspDiagnosticsDefaultError"]           = { fg = c['blu'], bg = 'NONE' },
 		["LspDiagnosticsDefaultWarning"]         = { fg = c['blu'], bg = 'NONE' },
