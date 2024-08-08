@@ -2,7 +2,7 @@
 
 local M = {}
 
----@class FlexokiOptions
+---@class argonoctOptions
 M.options = {
 	---Set the desired variant: 'auto' will follow the vim background,
 	---defaulting to 'main' for dark and 'dawn' for light. To change the dark

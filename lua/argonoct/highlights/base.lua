@@ -38,21 +38,21 @@ M.groups = function()
 
         ["Search"]     = { fg = c['bg'], bg = c['cyn'] },
         ["IncSearch"]  = { fg = c['bg'], bg = c['cyn'] },
-        ["Substitute"] = { fg = 'NONE',  bg = c['cyn'] },
+        ["Substitute"] = { fg = c['fg'],  bg = c['cyn'] },
 
         ["DiffAdd"]    = { fg = c['ygn'], bg = 'NONE' },
         ["DiffChange"] = { fg = c['blu'], bg = 'NONE' },
         ["DiffDelete"] = { fg = c['red'], bg = 'NONE' },
-        ["DiffText"]   = { fg = c['wht'], bg = 'NONE' },
+        ["DiffText"]   = { fg = c['fg'], bg = 'NONE' },
 
         --#region Actual text highlighting
 
-        ["Comment"] = { fg = c['cyn'], bg = 'NONE', italic = true, },
+        ["Comment"] = { fg = c['gry'], bg = 'NONE', italic = true, },
 
-        ["Constant"]  = { fg = c['grn'], bg = 'NONE' },
+        ["Constant"]  = { fg = c['mag'], bg = 'NONE' },
         ["String"]    = { fg = c['lbl'], bg = 'NONE' },
         ["Character"] = { fg = c['lbl'], bg = 'NONE' },
-        ["Number"]    = { fg = c['red'], bg = 'NONE' },
+        ["Number"]    = { fg = c['pur'], bg = 'NONE' },
         ["Boolean"]   = { link = 'Number' },
         ["Float"]     = { link = 'Number' },
 
@@ -63,27 +63,27 @@ M.groups = function()
         ["Conditional"] = { link = 'Keyword' },
         ["Repeat"]      = { link = 'Keyword' },
         ["Label"]       = { link = 'Keyword' },
-        ["Operator"]    = { fg   = c['wht'], bg = 'NONE' },
-        ["Keyword"]     = { fg   = c['wht'], bg = 'NONE' },
+        ["Operator"]    = { fg   = c['fg'], bg = 'NONE' },
+        ["Keyword"]     = { fg   = c['fg'], bg = 'NONE' },
         ["Exception"]   = { link = 'Keyword' },
 
-        ["PreProc"]   = { fg = c['wht'], bg = 'NONE' },
-        ["Include"]   = { fg = c['wht'], bg = 'NONE' },
-        ["Define"]    = { fg = c['wht'], bg = 'NONE' },
-        ["Macro"]     = { fg = c['wht'], bg = 'NONE' },
-        ["PreCondit"] = { fg = c['wht'], bg = 'NONE' },
+        ["PreProc"]   = { fg = c['fg'], bg = 'NONE' },
+        ["Include"]   = { fg = c['fg'], bg = 'NONE' },
+        ["Define"]    = { fg = c['fg'], bg = 'NONE' },
+        ["Macro"]     = { fg = c['fg'], bg = 'NONE' },
+        ["PreCondit"] = { fg = c['fg'], bg = 'NONE' },
 
         ["Type"]         = { fg = c['ygn'], bg = 'NONE' },
         ["StorageClass"] = { fg = c['ygn'], bg = 'NONE' },
         ["Structure"]    = { fg = c['ygn'], bg = 'NONE' },
         ["Typedef"]      = { fg = c['ygn'], bg = 'NONE' },
 
-        ["SpecialComment"] = { fg   = c['mag'], bg = 'NONE' },
-        ["Special"]        = { fg   = c['mag'], bg = 'NONE' },
-        ["SpecialChar"]    = { fg   = c['mag'], bg = 'NONE' },
-        ["Tag"]            = { fg   = c['org'], bg = 'NONE' },
-        ["Debug"]          = { fg   = c['pur'], bg = 'NONE' },
-        ["Delimiter"]      = { link = 'Special' },
+        ["SpecialComment"] = { fg   = c['grn'], bg = 'NONE' },
+        ["Special"]        = { fg   = c['grn'], bg = 'NONE' },
+        ["SpecialChar"]    = { fg   = c['grn'], bg = 'NONE' },
+        ["Tag"]            = { fg   = c['red'], bg = 'NONE' },
+        ["Debug"]          = { fg   = c['grn'], bg = 'NONE' },
+        ["Delimiter"]      = { fg   = c['fg'], bg = 'NONE' },
         ["Error"]          = { fg   = c['bg'], bg = c['red'], bold = true, },
         ["Todo"]           = { fg   = c['bg'], bg = c['ylw'], bold = true, },
 
@@ -96,7 +96,7 @@ M.groups = function()
         ["MsgSeparator"]   = { fg = 'NONE', bg = c['bg'] },
 
         -- Pop-up menu
-        ["Pmenu"]      = { fg = c['fg'], bg = c['gry'] },
+        ["Pmenu"]      = { fg = c['fg'], bg = c['bg'] },
         ["PmenuSel"]   = { fg = c['bg'], bg = c['fg'] },
         ["PmenuSbar"]  = { fg = 'NONE', bg = c['bg'] },
         ["PmenuThumb"] = { fg = 'NONE', bg = c['bg'] },
@@ -114,14 +114,14 @@ M.groups = function()
         ["WinBarNC"] = { fg = c['fg'], bg = c['bg'] },
 
         ["WildMenu"]       = { fg = 'NONE', bg = c['cyn'] },
-        ["Folded"]         = { fg = c['gry'], bg = c['bg'] },
-        ["FoldColumn"]     = { fg = c['gry'], bg = c['bg'] },
-        ["LineNr"]         = { fg = c['slv'], bg = 'NONE' },
-        ["FloatBorder"]    = { fg = c['gry'], bg = c['bg'] },
+        ["Folded"]         = { fg = c['fg'], bg = c['bg'] },
+        ["FoldColumn"]     = { fg = c['fg'], bg = c['bg'] },
+        ["LineNr"]         = { fg = c['fg'], bg = 'NONE' },
+        ["FloatBorder"]    = { fg = c['bg'], bg = c['bg'] },
         ["Whitespace"]     = { fg = c['slv'], bg = 'NONE' },
-        ["WinSeparator"]   = { fg = c['blk'], bg = c['blk'] },
-        ["WinSeparatorNC"] = { fg = c['blk'], bg = c['blk'] },
-        ["NormalFloat"]    = { fg = c['wht'], bg = c['bg'] },
+        ["WinSeparator"]   = { fg = c['bg'], bg = c['bg'] },
+        ["WinSeparatorNC"] = { fg = c['bg'], bg = c['bg'] },
+        ["NormalFloat"]    = { fg = c['bg'], bg = c['bg'] },
         ["WarningMsg"]     = { fg = c['ylw'], bg = c['bg'] },
         ["QuickFixLine"]   = { fg = 'NONE', bg = c['blu'] },
 
@@ -146,14 +146,14 @@ M.groups = function()
         ["Cursor"]       = { fg = c['fg'], bg = 'NONE' },
         ["lCursor"]      = { fg = c['fg'], bg = c['bg'] },
         ["CursorLine"]   = { fg = 'NONE',  bg = c['bg'] },
-        ["CursorLineNr"] = { fg = c['fg'], bg = 'NONE', bold = true, },
-        ["CursorColumn"] = { fg = 'NONE',  bg = c['bg'] },
+        ["CursorLineNr"] = { fg = c['fg'], bg = 'NONE', bold = true },
+        ["CursorColumn"] = { fg = 'NONE',  bg = 'NONE' },
         ["ColorColumn"]  = { fg = 'NONE',  bg = c['fg'] },
         ["CursorIM"]     = { fg = c['bg'], bg = c['fg'] },
         ["TermCursor"]   = { fg = c['bg'], bg = c['fg'] },
         ["TermCursorNC"] = { fg = c['bg'], bg = c['fg'] },
-        ["Visual"]       = { fg = 'NONE',  bg = c['gry'] },
-        ["VisualNOS"]    = { fg = 'NONE',  bg = c['gry'] },
+        ["Visual"]       = { fg = c['bg'],  bg = c['fg'] },
+        ["VisualNOS"]    = { fg = c['bg'],  bg = c['fg'] },
     }
 end
 
