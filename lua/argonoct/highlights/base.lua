@@ -47,7 +47,7 @@ M.groups = function()
 
         --#region Actual text highlighting
 
-        ["Comment"] = { fg = c['gry'], bg = 'NONE', italic = true, },
+        ["Comment"] = { fg = c['mg'], bg = 'NONE', italic = true, },
 
         ["Constant"]  = { fg = c['mag'], bg = 'NONE' },
         ["String"]    = { fg = c['lbl'], bg = 'NONE' },
@@ -110,8 +110,8 @@ M.groups = function()
         ["StatusLineTerm"]   = { fg = c['fg'], bg = c['bg'] },
         ["StatusLineTermNC"] = { fg = c['fg'], bg = c['bg'] },
 
-        ["WinBar"]   = { fg = c['fg'], bg = c['bg'] },
-        ["WinBarNC"] = { fg = c['fg'], bg = c['bg'] },
+        ["WinBar"]   = { fg = c['bg'], bg = c['fg'] },
+        ["WinBarNC"] = { fg = c['bg'], bg = c['fg'] },
 
         ["WildMenu"]       = { fg = 'NONE', bg = c['cyn'] },
         ["Folded"]         = { fg = c['fg'], bg = c['bg'] },

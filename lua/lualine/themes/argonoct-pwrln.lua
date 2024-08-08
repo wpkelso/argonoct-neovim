@@ -5,8 +5,8 @@ local c = palette.palette()
 return {
     normal = {
         a = { fg = c['bg'], bg = c['blu'], gui = 'bold' },
-        b = { fg = c['fg'], bg = c['bg'] },
-        c = { fg = c['fg'], bg = c['bg'] }
+        b = { fg = c['wht'], bg = c['mg'] },
+        c = { fg = c['wht'], bg = c['mg'] }
     },
     insert = {
         a = { fg = c['bg'], bg = c['grn'], gui = 'bold' },
@@ -24,13 +24,13 @@ return {
         c = { fg = c['fg'], bg = c['bg'] }
     },
     command = {
-        a = { fg = c['bg'], bg = c['lbl'], gui = 'bold' },
-        b = { fg = c['bg'], bg = c['blu'] },
-        c = { fg = c['bg'], bg = c['blu'] }
+        a = { fg = c['bg'], bg = c['blu'], gui = 'bold' },
+        b = { fg = c['bg'], bg = c['lbl'] },
+        c = { fg = c['bg'], bg = c['lbl'] }
     },
     inactive = {
-        a = { fg = c['gry'], bg = c['bg'], gui = 'bold' },
-        b = { fg = c['gry'], bg = c['bg'] },
-        c = { fg = c['gry'], bg = c['bg'] }
+        a = { fg = c['mg'], bg = c['bg'], gui = 'bold' },
+        b = { fg = c['mg'], bg = c['bg'] },
+        c = { fg = c['mg'], bg = c['bg'] }
     }
 }
