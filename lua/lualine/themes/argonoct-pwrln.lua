@@ -5,8 +5,8 @@ local c = palette.palette()
 return {
     normal = {
         a = { fg = c['bg'], bg = c['blu'], gui = 'bold' },
-        b = { fg = c['wht'], bg = c['mg'] },
-        c = { fg = c['wht'], bg = c['mg'] }
+        b = { fg = c['bg'], bg = c['fg'] },
+        c = { fg = c['bg'], bg = c['fg'] }
     },
     insert = {
         a = { fg = c['bg'], bg = c['grn'], gui = 'bold' },
@@ -29,8 +29,8 @@ return {
         c = { fg = c['bg'], bg = c['lbl'] }
     },
     inactive = {
-        a = { fg = c['mg'], bg = c['bg'], gui = 'bold' },
-        b = { fg = c['mg'], bg = c['bg'] },
-        c = { fg = c['mg'], bg = c['bg'] }
+        a = { fg = c['bg'], bg = c['mg'], gui = 'bold' },
+        b = { fg = c['bg'], bg = c['mg'] },
+        c = { fg = c['bg'], bg = c['mg'] }
     }
 }
