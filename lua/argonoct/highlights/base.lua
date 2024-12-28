@@ -117,11 +117,11 @@ M.groups = function()
         ["Folded"]         = { fg = c['fg'], bg = c['bg'] },
         ["FoldColumn"]     = { fg = c['fg'], bg = c['bg'] },
         ["LineNr"]         = { fg = c['fg'], bg = 'NONE' },
-        ["FloatBorder"]    = { fg = c['bg'], bg = c['bg'] },
+        ["FloatBorder"]    = { fg = c['fg'], bg = c['bg'] },
         ["Whitespace"]     = { fg = c['slv'], bg = 'NONE' },
         ["WinSeparator"]   = { fg = c['bg'], bg = c['bg'] },
         ["WinSeparatorNC"] = { fg = c['bg'], bg = c['bg'] },
-        ["NormalFloat"]    = { fg = c['bg'], bg = c['bg'] },
+        ["NormalFloat"]    = { fg = c['fg'], bg = c['bg'] },
         ["WarningMsg"]     = { fg = c['ylw'], bg = c['bg'] },
         ["QuickFixLine"]   = { fg = 'NONE', bg = c['blu'] },
 
