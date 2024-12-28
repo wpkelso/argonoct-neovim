@@ -52,7 +52,7 @@ M.groups = function()
         ["Constant"]  = { fg = c['mag'], bg = 'NONE' },
         ["String"]    = { fg = c['lbl'], bg = 'NONE' },
         ["Character"] = { fg = c['lbl'], bg = 'NONE' },
-        ["Number"]    = { fg = c['pur'], bg = 'NONE' },
+        ["Number"]    = { fg = c['red'], bg = 'NONE' },
         ["Boolean"]   = { link = 'Number' },
         ["Float"]     = { link = 'Number' },
 
