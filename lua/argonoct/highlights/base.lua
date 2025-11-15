@@ -30,8 +30,8 @@ M.groups = function()
 
         ["SpellBad"]   = { fg = c['red'], bg = 'NONE', underline = true },
         ["SpellCap"]   = { fg = c['red'], bg = 'NONE', underline = true },
-        ["SpellLocal"] = { fg = c['red'], bg = 'NONE', underline = true },
-        ["SpellRare"]  = { fg = c['red'], bg = 'NONE', underline = true },
+        ["SpellLocal"] = { fg = c['ylw'], bg = 'NONE', underline = true },
+        ["SpellRare"]  = { fg = c['ylw'], bg = 'NONE', underline = true },
 
         ["NonText"]     = { fg = c['fg'], bg = 'NONE' },
         ["EndOfBuffer"] = { fg = 'NONE',  bg = 'NONE' },
@@ -40,7 +40,7 @@ M.groups = function()
         ["IncSearch"]  = { fg = c['bg'],  bg = c['fg'] },
         ["Substitute"] = { fg = c['bg'],  bg = c['fg'] },
 
-        ["DiffAdd"]    = { fg = c['ygn'], bg = 'NONE' },
+        ["DiffAdd"]    = { fg = c['grn'], bg = 'NONE' },
         ["DiffChange"] = { fg = c['blu'], bg = 'NONE' },
         ["DiffDelete"] = { fg = c['red'], bg = 'NONE' },
         ["DiffText"]   = { fg = c['fg'],  bg = 'NONE' },
@@ -49,15 +49,16 @@ M.groups = function()
 
         ["Comment"] = { fg = c['cyn'], bg = 'NONE', italic = true, },
 
-        ["Constant"]  = { fg = c['red'], bg = 'NONE' },
+        ["Constant"]  = { fg = c['ygn'], bg = 'NONE' },
         ["String"]    = { link = 'Constant' },
         ["Character"] = { link = 'Constant' },
         ["Number"]    = { link = 'Constant' },
         ["Boolean"]   = { link = 'Constant' },
         ["Float"]     = { link = 'Constant' },
 
-        ["Identifier"] = { fg = c['blu'], bg = 'NONE' },
-        ["Function"]   = { fg = c['fg'], bg = 'NONE' },
+        ["@variable"] = { fg = c['blu'], bg = 'NONE' },
+        ["Identifier"] = { link = '@variable' },
+        ["Function"]   = { fg = c['org'], bg = 'NONE' },
 
         ["Statement"]   = { link = 'Normal' },
         ["Conditional"] = { link = 'Normal' },
@@ -73,17 +74,17 @@ M.groups = function()
         ["Macro"]     = { fg = c['fg'], bg = 'NONE' },
         ["PreCondit"] = { fg = c['fg'], bg = 'NONE' },
 
-        ["Type"]         = { link = 'Normal' },
+        ["Type"]         = { fg = c['pur'], bg = 'NONE' },
         ["StorageClass"] = { link = 'Normal' },
         ["Structure"]    = { link = 'Normal' },
-        ["Typedef"]      = { fg = c['ygn'], bg = 'NONE' },
+        ["Typedef"]      = { fg = c['mag'], bg = 'NONE' },
 
-        ["SpecialComment"] = { fg   = c['mg'], bg = 'NONE' },
-        ["Special"]        = { fg   = c['mg'], bg = 'NONE' },
-        ["SpecialChar"]    = { fg   = c['mg'], bg = 'NONE' },
+        ["SpecialComment"] = { fg   = c['fg'], bg = 'NONE' },
+        ["Special"]        = { fg   = c['fg'], bg = 'NONE' },
+        ["SpecialChar"]    = { fg   = c['fg'], bg = 'NONE' },
         ["Tag"]            = { fg   = c['fg'], bg = 'NONE' },
-        ["Debug"]          = { fg   = c['fg'], bg = 'NONE' },
-        ["Delimiter"]      = { fg   = c['fg'], bg = 'NONE' },
+        ["Debug"]          = { fg   = c['lbl'], bg = 'NONE' },
+        ["Delimiter"]      = { fg   = c['mg'], bg = 'NONE' },
         ["Error"]          = { fg   = c['bg'], bg = c['red'], bold = true, },
         ["Todo"]           = { fg   = c['bg'], bg = c['ylw'], bold = true, },
 
