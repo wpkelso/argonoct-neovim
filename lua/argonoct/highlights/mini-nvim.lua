@@ -1,4 +1,4 @@
-local palette = require('flexoki.palette')
+local palette = require('argonoct.palette')
 
 local M = {}
 
@@ -23,7 +23,7 @@ M.groups = function()
 
 		--#region mini.indentscope
 
-		['MiniIndentscopeSymbol']    = { fg = c['ui-3'], bg = 'NONE'    },
+		['MiniIndentscopeSymbol']    = { fg = c['mg'], bg = 'NONE'    },
 		['MiniIndentscopeSymbolOff'] = { link = 'MiniIndentscopeSymbol' },
 
 		--#endregion

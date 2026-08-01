@@ -9,38 +9,41 @@ M.groups = function()
 	return {
 		["DiagnosticError"]                      = { fg = c['red'], bg = 'NONE' }, -- inline msg
 		["DiagnosticWarn"]                       = { fg = c['ylw'], bg = 'NONE' }, -- inline msg
-		["DiagnosticInfo"]                       = { fg = c['wht'], bg = 'NONE' }, -- inline msg
-		["DiagnosticHint"]                       = { fg = c['slv'], bg = 'NONE' }, -- inline msg
+		["DiagnosticInfo"]                       = { fg = c['fg'], bg = 'NONE' }, -- inline msg
+		["DiagnosticHint"]                       = { fg = c['mg'], bg = 'NONE' }, -- inline msg
 
         ["DiagnosticSignError"]                  = { fg = c['red'], bg = 'NONE', bold = true }, -- gutter message
 		["DiagnosticSignWarn"]                   = { fg = c['ylw'], bg = 'NONE', bold = true }, -- gutter message
-		["DiagnosticSignInfo"]                   = { fg = c['wht'], bg = 'NONE', bold = true }, -- gutter message
-		["DiagnosticSignHint"]                   = { fg = c['slv'], bg = 'NONE', bold = true }, -- gutter message
+		["DiagnosticSignInfo"]                   = { fg = c['fg'], bg = 'NONE', bold = true }, -- gutter message
+		["DiagnosticSignHint"]                   = { fg = c['mg'], bg = 'NONE', bold = true }, -- gutter message
 
-		["LspDiagnosticsDefaultError"]           = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsDefaultWarning"]         = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsDefaultInfo"]            = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsDefaultHint"]            = { fg = c['blu'], bg = 'NONE' },
+        ["DiagnosticUnderlineError"]            = { sp = c['red'], underline = true},
+        ["DiagnosticUnderlineWarn"]             = { sp = c['ylw'], underline = true},
 
-		["LspDiagnosticsVirtualTextError"]       = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsVirtualTextWarning"]     = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsVirtualTextInfo"]        = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsVirtualTextHint"]        = { fg = c['blu'], bg = 'NONE' },
+		["LspDiagnosticsDefaultError"]           = { fg = c['red'], bg = 'NONE' },
+		["LspDiagnosticsDefaultWarning"]         = { fg = c['ylw'], bg = 'NONE' },
+		["LspDiagnosticsDefaultInfo"]            = { fg = c['fg'], bg = 'NONE' },
+		["LspDiagnosticsDefaultHint"]            = { fg = c['mg'], bg = 'NONE' },
 
-		["LspDiagnosticsFloatingError"]          = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsFloatingWarning"]        = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsFloatingInfo"]           = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsFloatingHint"]           = { fg = c['blu'], bg = 'NONE' },
+		["LspDiagnosticsVirtualTextError"]       = { fg = c['red'], bg = 'NONE' },
+		["LspDiagnosticsVirtualTextWarning"]     = { fg = c['ylw'], bg = 'NONE' },
+		["LspDiagnosticsVirtualTextInfo"]        = { fg = c['fg'], bg = 'NONE' },
+		["LspDiagnosticsVirtualTextHint"]        = { fg = c['mg'], bg = 'NONE' },
 
-		["LspDiagnosticsSignError"]              = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsSignWarning"]            = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsSignInfo"]               = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsSignHint"]               = { fg = c['blu'], bg = 'NONE' },
+		["LspDiagnosticsFloatingError"]          = { fg = c['red'], bg = 'NONE' },
+		["LspDiagnosticsFloatingWarning"]        = { fg = c['ylw'], bg = 'NONE' },
+		["LspDiagnosticsFloatingInfo"]           = { fg = c['fg'], bg = 'NONE' },
+		["LspDiagnosticsFloatingHint"]           = { fg = c['mg'], bg = 'NONE' },
 
-		["LspDiagnosticsError"]                  = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsWarning"]                = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsInfo"]                   = { fg = c['blu'], bg = 'NONE' },
-		["LspDiagnosticsHint"]                   = { fg = c['blu'], bg = 'NONE' },
+		["LspDiagnosticsSignError"]              = { fg = c['red'], bg = 'NONE' },
+		["LspDiagnosticsSignWarning"]            = { fg = c['ylw'], bg = 'NONE' },
+		["LspDiagnosticsSignInfo"]               = { fg = c['fg'], bg = 'NONE' },
+		["LspDiagnosticsSignHint"]               = { fg = c['mg'], bg = 'NONE' },
+
+		["LspDiagnosticsError"]                  = { fg = c['red'], bg = 'NONE' },
+		["LspDiagnosticsWarning"]                = { fg = c['ylw'], bg = 'NONE' },
+		["LspDiagnosticsInfo"]                   = { fg = c['fg'], bg = 'NONE' },
+		["LspDiagnosticsHint"]                   = { fg = c['mg'], bg = 'NONE' },
 
 		["LspDiagnosticsUnderlineError"]         = { fg = 'NONE', bg = 'NONE', underline = true, },
 		["LspDiagnosticsUnderlineWarn"]          = { fg = 'NONE', bg = 'NONE', underline = true, },

@@ -28,26 +28,26 @@ M.groups = function()
         ["Bold"]       = { fg = 'NONE',  bg = 'NONE', bold       = true },
         ["Italic"]     = { fg = 'NONE',  bg = 'NONE', italic     = true },
 
-        ["SpellBad"]   = { fg = c['red'], bg = 'NONE', underline = true },
-        ["SpellCap"]   = { fg = c['red'], bg = 'NONE', underline = true },
-        ["SpellLocal"] = { fg = c['ylw'], bg = 'NONE', underline = true },
-        ["SpellRare"]  = { fg = c['ylw'], bg = 'NONE', underline = true },
+        ["SpellBad"]   = { fg = c['bg'], bg = c['red'], underline = true },
+        ["SpellCap"]   = { fg = c['bg'], bg = c['red'], underline = true },
+        ["SpellLocal"] = { fg = c['bg'], bg = c['ylw'], underline = true },
+        ["SpellRare"]  = { fg = c['bg'], bg = c['ylw'], underline = true },
 
         ["NonText"]     = { fg = c['fg'], bg = 'NONE' },
         ["EndOfBuffer"] = { fg = 'NONE',  bg = 'NONE' },
 
-        ["Search"]     = { fg = c['bg'],  bg = c['fg'] },
-        ["IncSearch"]  = { fg = c['bg'],  bg = c['fg'] },
-        ["Substitute"] = { fg = c['bg'],  bg = c['fg'] },
+        ["Search"]     = { fg = c['bg'],  bg = c['mag'] },
+        ["IncSearch"]  = { fg = c['bg'],  bg = c['mag'] },
+        ["Substitute"] = { fg = c['bg'],  bg = c['mag'] },
 
-        ["DiffAdd"]    = { fg = c['grn'], bg = 'NONE' },
-        ["DiffChange"] = { fg = c['blu'], bg = 'NONE' },
-        ["DiffDelete"] = { fg = c['red'], bg = 'NONE' },
+        ["DiffAdd"]    = { fg = c['grn'], bg = c['tgrn'] },
+        ["DiffChange"] = { fg = c['blu'], bg = c['tblu'] },
+        ["DiffDelete"] = { fg = c['red'], bg = c['tred'] },
         ["DiffText"]   = { fg = c['fg'],  bg = 'NONE' },
 
         --#region Actual text highlighting
 
-        ["Comment"] = { fg = c['cyn'], bg = 'NONE', italic = true, },
+        ["Comment"] = { fg = c['cyn'], bg = c['tcyn'], italic = true, },
 
         ["Constant"]  = { fg = c['ygn'], bg = 'NONE' },
         ["String"]    = { link = 'Constant' },
@@ -56,9 +56,8 @@ M.groups = function()
         ["Boolean"]   = { link = 'Constant' },
         ["Float"]     = { link = 'Constant' },
 
-        ["@variable"] = { fg = c['blu'], bg = 'NONE' },
-        ["Identifier"] = { link = '@variable' },
-        ["Function"]   = { fg = c['org'], bg = 'NONE' },
+        ["Identifier"] = { fg = c['fg'], bg = 'NONE' },
+        ["Function"]   = { fg = c['ylw'], bg = 'NONE' },
 
         ["Statement"]   = { link = 'Normal' },
         ["Conditional"] = { link = 'Normal' },
@@ -68,16 +67,16 @@ M.groups = function()
         ["Keyword"]     = { link = 'Normal' },
         ["Exception"]   = { link = 'Normal' },
 
-        ["PreProc"]   = { fg = c['fg'], bg = 'NONE' },
-        ["Include"]   = { fg = c['fg'], bg = 'NONE' },
-        ["Define"]    = { fg = c['fg'], bg = 'NONE' },
-        ["Macro"]     = { fg = c['fg'], bg = 'NONE' },
-        ["PreCondit"] = { fg = c['fg'], bg = 'NONE' },
+        ["PreProc"]     = { fg = c['fg'], bg = 'NONE' },
+        ["Include"]     = { fg = c['fg'], bg = 'NONE' },
+        ["Define"]      = { fg = c['fg'], bg = 'NONE' },
+        ["Macro"]       = { fg = c['fg'], bg = 'NONE' },
+        ["PreCondit"]   = { fg = c['fg'], bg = 'NONE' },
 
-        ["Type"]         = { fg = c['pur'], bg = 'NONE' },
+        ["Type"]         = { fg = c['fg'], bg = 'NONE' },
         ["StorageClass"] = { link = 'Normal' },
         ["Structure"]    = { link = 'Normal' },
-        ["Typedef"]      = { fg = c['mag'], bg = 'NONE' },
+        ["Typedef"]      = { fg = c['pur'], bg = 'NONE' },
 
         ["SpecialComment"] = { fg   = c['fg'], bg = 'NONE' },
         ["Special"]        = { fg   = c['fg'], bg = 'NONE' },
@@ -98,12 +97,12 @@ M.groups = function()
 
         -- Pop-up menu
         ["Pmenu"]      = { fg = c['fg'], bg = c['bg'] },
-        ["PmenuSel"]   = { fg = c['bg'], bg = c['fg'] },
+        ["PmenuSel"]   = { fg = c['fg'], bg = c['mg'] },
         ["PmenuSbar"]  = { fg = 'NONE', bg = c['bg'] },
         ["PmenuThumb"] = { fg = 'NONE', bg = c['bg'] },
 
-        ["TabLine"]     = { fg = c['fg'], bg = c['fg'] },
-        ["TabLineSel"]  = { fg = c['fg'], bg = c['bg'] },
+        ["TabLine"]     = { fg = c['mg'], bg = c['bg'] },
+        ["TabLineSel"]  = { fg = c['bg'], bg = c['fg'] },
         ["TabLineFill"] = { fg = c['fg'], bg = c['bg'] },
 
         ["StatusLine"]       = { fg = c['fg'], bg = c['bg'] },
@@ -118,8 +117,10 @@ M.groups = function()
         ["Folded"]         = { fg = c['fg'], bg = c['bg'] },
         ["FoldColumn"]     = { fg = c['fg'], bg = c['bg'] },
         ["LineNr"]         = { fg = c['fg'], bg = 'NONE' },
+        ["LineNrAbove"]    = { fg = c['mg'], bg = 'NONE' },
+        ["LineNrBelow"]    = { fg = c['mg'], bg = 'NONE' },
         ["FloatBorder"]    = { fg = c['fg'], bg = c['bg'] },
-        ["Whitespace"]     = { fg = c['slv'], bg = 'NONE' },
+        ["Whitespace"]     = { fg = c['mg'], bg = 'NONE' },
         ["WinSeparator"]   = { fg = c['bg'], bg = c['bg'] },
         ["WinSeparatorNC"] = { fg = c['bg'], bg = c['bg'] },
         ["NormalFloat"]    = { fg = c['fg'], bg = c['bg'] },
@@ -129,10 +130,10 @@ M.groups = function()
         -- The MatchWord groups don't actually exist, but we define them here
         -- to link to them in plugin specific files instead of redefining the
         -- same group multiple times
-        ["MatchWord"]      = { fg = 'NONE', bg = c['slv'] },
-        ["MatchParen"]     = { fg = 'NONE', bg = c['slv'] },
-        ["MatchWordCur"]   = { fg = 'NONE', bg = 'NONE' },
-        ["MatchParenCur"]  = { fg = 'NONE', bg = 'NONE' },
+        ["MatchWord"]      = { fg = 'bg', bg = c['mag'] },
+        ["MatchParen"]     = { fg = 'bg', bg = c['mg'] },
+        ["MatchWordCur"]   = { fg = 'bg', bg = c['mag'] },
+        ["MatchParenCur"]  = { fg = 'bg', bg = c['mag'] },
 
         ["Conceal"]   = { fg = 'NONE', bg = 'NONE' },
         ["Directory"] = { fg = c['blu'], bg = 'NONE' },
@@ -146,15 +147,15 @@ M.groups = function()
         -- Cursor and selection related
         ["Cursor"]       = { fg = c['fg'], bg = 'NONE' },
         ["lCursor"]      = { fg = c['fg'], bg = c['bg'] },
-        ["CursorLine"]   = { fg = 'NONE',  bg = c['bg'] },
-        ["CursorLineNr"] = { fg = c['fg'], bg = 'NONE', bold = true },
+        ["CursorLine"]   = { fg = 'NONE',  bg = 'NONE' },
+        ["CursorLineNr"] = { fg = c['fg'], bg = 'NONE' },
         ["CursorColumn"] = { fg = 'NONE',  bg = 'NONE' },
-        ["ColorColumn"]  = { fg = 'NONE',  bg = c['fg'] },
-        ["CursorIM"]     = { fg = c['bg'], bg = c['fg'] },
-        ["TermCursor"]   = { fg = c['bg'], bg = c['fg'] },
-        ["TermCursorNC"] = { fg = c['bg'], bg = c['fg'] },
-        ["Visual"]       = { fg = c['bg'],  bg = c['fg'] },
-        ["VisualNOS"]    = { fg = c['bg'],  bg = c['fg'] },
+        ["ColorColumn"]  = { fg = 'NONE',  bg = c['bg'] },
+        ["CursorIM"]     = { fg = c['fg'], bg = c['bg'] },
+        ["TermCursor"]   = { fg = c['fg'], bg = c['bg'] },
+        ["TermCursorNC"] = { fg = c['fg'], bg = c['bg'] },
+        ["Visual"]       = { fg = c['bg'], bg = c['fg'] },
+        ["VisualNOS"]    = { fg = c['bg'], bg = c['fg'] },
     }
 end
 

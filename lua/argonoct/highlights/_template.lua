@@ -1,4 +1,4 @@
-local palette = require('flexoki.palette')
+local palette = require('argonoct.palette')
 
 local M = {}
 
