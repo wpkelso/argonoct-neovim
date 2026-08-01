@@ -39,7 +39,7 @@ local variants = {
 		background  = 'light',
 
         --#region UI Colors
-		['bg']      = '#FFEDDB',
+		['bg']      = '#FFFAF4',
         ['mg']      = '#5A5A5A',
         ['fg']      = '#0E1019',
 
@@ -60,10 +60,10 @@ local variants = {
         ['org']     = '#ECAE0A',
 
         --#region Transparent Colors
-        ['tred'] = '#F5BAAA',
-        ['tgrn'] = '#D2D1A4',
-        ['tblu'] = '#C1CDD3',
-        ['tcyn'] = '#C0DDD4',
+        ['tred'] = '#F5C3BD',
+        ['tgrn'] = '#D2DBB7',
+        ['tblu'] = '#C1D7E6',
+        ['tcyn'] = '#C0E7E6',
     }
 }
 

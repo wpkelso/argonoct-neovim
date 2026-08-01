@@ -121,8 +121,8 @@ M.groups = function()
         ["LineNrBelow"]    = { fg = c['mg'], bg = 'NONE' },
         ["FloatBorder"]    = { fg = c['fg'], bg = c['bg'] },
         ["Whitespace"]     = { fg = c['mg'], bg = 'NONE' },
-        ["WinSeparator"]   = { fg = c['bg'], bg = c['bg'] },
-        ["WinSeparatorNC"] = { fg = c['bg'], bg = c['bg'] },
+        ["WinSeparator"]   = { fg = c['fg'], bg = c['bg'] },
+        ["WinSeparatorNC"] = { fg = c['fg'], bg = c['bg'] },
         ["NormalFloat"]    = { fg = c['fg'], bg = c['bg'] },
         ["WarningMsg"]     = { fg = c['ylw'], bg = c['bg'] },
         ["QuickFixLine"]   = { fg = 'NONE', bg = c['blu'] },
@@ -145,7 +145,7 @@ M.groups = function()
         ["Question"]   = { fg = c['ylw'], bg = 'NONE' },
 
         -- Cursor and selection related
-        ["Cursor"]       = { fg = c['fg'], bg = 'NONE' },
+        ["Cursor"]       = { fg = c['fg'], bg = c['bg'] },
         ["lCursor"]      = { fg = c['fg'], bg = c['bg'] },
         ["CursorLine"]   = { fg = 'NONE',  bg = 'NONE' },
         ["CursorLineNr"] = { fg = c['fg'], bg = 'NONE' },
